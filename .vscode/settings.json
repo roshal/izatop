@@ -1,0 +1,23 @@
+{
+	"[javascript]": {
+		"editor.comments.insertSpace": false,
+	},
+	"[json5]": {
+		"editor.comments.insertSpace": false,
+	},
+	"[json]": {
+		"editor.comments.insertSpace": false,
+	},
+	"[typescript]": {
+		"editor.comments.insertSpace": false,
+	},
+	"files.exclude": {
+		"**/node_modules": true,
+	},
+	"files.watcherExclude": {
+		"**/node_modules": true,
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+	},
+}

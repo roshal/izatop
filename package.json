@@ -1,0 +1,20 @@
+{
+	"name": "number-coder",
+	"version": "0.0.0",
+	"description": "A TypeScript library for converting numbers to short codes and back.",
+	"main": "public/index.js",
+	"types": "public/index.d.ts",
+	"private": true,
+	"devDependencies": {
+		"@stylistic/eslint-plugin": "^2.10.1",
+		"@types/node": "^22.8.7",
+		"@typescript-eslint/eslint-plugin": "^8.12.2",
+		"eslint": "^9.14.0",
+		"eslint-plugin-import": "^2.31.0",
+		"globals": "^15.11.0",
+		"nps": "^5.10.0",
+		"tsx": "^4.19.2",
+		"typescript": "^5.6.3"
+	},
+	"license": "UNLICENSED"
+}

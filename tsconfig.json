@@ -1,0 +1,137 @@
+{
+	/*
+	## https://www.typescriptlang.org/tsconfig
+	*/
+	"compilerOptions": {
+		/*
+		## Projects
+		*/
+		"incremental": true,
+		"composite": true,
+		//"tsBuildInfoFile": "tsconfig.tsbuildinfo",
+		//"disableSourceOfProjectReferenceRedirect": true,
+		//"disableSolutionSearching": true,
+		//"disableReferencedProjectLoad": true,
+		/*
+		## Language and Environment
+		*/
+		"target": "esnext",
+		"lib": [
+			"esnext",
+		],
+		//"jsx": "preserve",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		//"jsxFactory": "",
+		//"jsxFragmentFactory": "",
+		//"jsxImportSource": "",
+		//"reactNamespace": "",
+		//"noLib": true,
+		//"useDefineForClassFields": true,
+		//"moduleDetection": "auto",
+		/*
+		## Modules
+		*/
+		"module": "commonjs",
+		"rootDir": "source",
+		//"moduleResolution": "node10",
+		//"baseUrl": ".",
+		"paths": {
+			"/*": [
+				"./*",
+			],
+			"@/*": [
+				"./source/*",
+			],
+		},
+		//"rootDirs": [],
+		"typeRoots": [
+			"node_modules/@types",
+		],
+		//"types": [],
+		//"allowUmdGlobalAccess": true,
+		//"moduleSuffixes": [],
+		//"allowImportingTsExtensions": true,
+		//"resolvePackageJsonExports": true,
+		//"resolvePackageJsonImports": true,
+		//"customConditions": [],
+		//"resolveJsonModule": true,
+		//"allowArbitraryExtensions": true,
+		//"noResolve": true,
+		/*
+		## JavaScript Support
+		*/
+		//"allowJs": true,
+		//"checkJs": true,
+		//"maxNodeModuleJsDepth": 1,
+		/*
+		## Emit
+		*/
+		//"declaration": true,
+		//"declarationMap": true,
+		//"emitDeclarationOnly": true,
+		"sourceMap": true,
+		//"inlineSourceMap": true,
+		//"outFile": ".",
+		"outDir": "public",
+		"removeComments": true,
+		//"noEmit": true,
+		//"importHelpers": true,
+		//"importsNotUsedAsValues": "remove",
+		//"downlevelIteration": true,
+		//"sourceRoot": "",
+		//"mapRoot": "",
+		//"inlineSources": true,
+		//"emitBOM": true,
+		//"newLine": "lf",
+		//"stripInternal": true,
+		//"noEmitHelpers": true,
+		//"noEmitOnError": true,
+		//"preserveConstEnums": true,
+		//"declarationDir": "./",
+		//"preserveValueImports": true,
+		/*
+		## Interop Constraints
+		*/
+		"isolatedModules": true,
+		//"verbatimModuleSyntax": true,
+		//"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		//"preserveSymlinks": true,
+		"forceConsistentCasingInFileNames": true,
+		/*
+		## Type Checking
+		*/
+		"strict": true,
+		//"noImplicitAny": true,
+		//"strictNullChecks": true,
+		//"strictFunctionTypes": true,
+		//"strictBindCallApply": true,
+		"strictPropertyInitialization": false,
+		//"noImplicitThis": true,
+		//"useUnknownInCatchVariables": true,
+		//"alwaysStrict": true,
+		//"noUnusedLocals": null,
+		//"noUnusedParameters": null,
+		//"exactOptionalPropertyTypes": true,
+		//"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		//"noImplicitOverride": true,
+		//"noPropertyAccessFromIndexSignature": true,
+		//"allowUnusedLabels": true,
+		//"allowUnreachableCode": true,
+		/*
+		## Completeness
+		*/
+		//"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
+	},
+	"exclude": [
+		"node_modules",
+		"source/**/*.test.ts",
+	],
+	"include": [
+		"source",
+	],
+}
