@@ -11,24 +11,26 @@ pnpm install
 
 ## Testing
 
-```npx nps t```
-
-```sh
-npx -- nps test
-```
-
 ```sh
 npx -- tsx --test source/index.test.ts
 ```
 
 ## Linting
 
+```sh
+npx -- eslint --cache -- source
+```
+
+## Scripts
+
+```npx nps t```
+
 ```npx nps l```
 
 ```sh
-npx -- nps lint
+npx -- nps test
 ```
 
 ```sh
-npx -- eslint --cache -- source
+npx -- nps lint
 ```
