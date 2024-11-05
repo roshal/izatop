@@ -25,7 +25,6 @@ void eslintConfigArray.push({
 
 void eslintConfigArray.push({
 	ignores: [
-		'!app',
 		'!source',
 	],
 })
