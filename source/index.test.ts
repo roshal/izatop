@@ -5,7 +5,7 @@ import test from 'node:test'
 import {decode} from '.'
 import {encode} from '.'
 
-test('should correctly encode numbers', () => {
+void test('should correctly encode numbers', () => {
 
 	void assert.strict.equal(encode(0), '000000')
 
@@ -19,7 +19,7 @@ test('should correctly encode numbers', () => {
 
 })
 
-test('should correctly decode strings', () => {
+void test('should correctly decode strings', () => {
 
 	void assert.strict.equal(decode('000000'), 0)
 
@@ -33,7 +33,7 @@ test('should correctly decode strings', () => {
 
 })
 
-test('should throw an error on encode for invalid inputs', () => {
+void test('should throw an error on encode for invalid inputs', () => {
 
 	void assert.throws(() => {
 		void encode(0.1)
@@ -57,7 +57,7 @@ test('should throw an error on encode for invalid inputs', () => {
 
 })
 
-test('should throw an error on decode for invalid inputs', () => {
+void test('should throw an error on decode for invalid inputs', () => {
 
 	void assert.throws(() => {
 		void decode('_BCDEF')
