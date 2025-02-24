@@ -6,29 +6,29 @@ import * as NumberCoder from '.'
 
 test('should correctly encode numbers', () => {
 
-	void assert.strict.equal(NumberCoder.encode(0), 'AAAAAA')
+	void assert.strict.equal(NumberCoder.encode(0), '000000')
 
-	void assert.strict.equal(NumberCoder.encode(123456), 'AACXJM')
-	void assert.strict.equal(NumberCoder.encode(135487), 'AAC6TT')
+	void assert.strict.equal(NumberCoder.encode(123456), '002N9C')
+	void assert.strict.equal(NumberCoder.encode(135487), '002WJJ')
 
-	void assert.strict.equal(NumberCoder.encode(1776965), 'ABCDEF')
-	void assert.strict.equal(NumberCoder.encode(8884825), 'AFKPUZ')
+	void assert.strict.equal(NumberCoder.encode(623714775), 'ABCDEF')
+	void assert.strict.equal(NumberCoder.encode(630822635), 'AFKPUZ')
 
-	void assert.strict.equal(NumberCoder.encode(2176782335), '999999')
+	void assert.strict.equal(NumberCoder.encode(2176782335), 'ZZZZZZ')
 
 })
 
 test('should correctly decode strings', () => {
 
-	void assert.strict.equal(NumberCoder.decode('AAAAAA'), 0)
+	void assert.strict.equal(NumberCoder.decode('000000'), 0)
 
-	void assert.strict.equal(NumberCoder.decode('AACXJM'), 123456)
-	void assert.strict.equal(NumberCoder.decode('AAC6TT'), 135487)
+	void assert.strict.equal(NumberCoder.decode('002N9C'), 123456)
+	void assert.strict.equal(NumberCoder.decode('002WJJ'), 135487)
 
-	void assert.strict.equal(NumberCoder.decode('ABCDEF'), 1776965)
-	void assert.strict.equal(NumberCoder.decode('AFKPUZ'), 8884825)
+	void assert.strict.equal(NumberCoder.decode('ABCDEF'), 623714775)
+	void assert.strict.equal(NumberCoder.decode('AFKPUZ'), 630822635)
 
-	void assert.strict.equal(NumberCoder.decode('999999'), 2176782335)
+	void assert.strict.equal(NumberCoder.decode('ZZZZZZ'), 2176782335)
 
 })
 

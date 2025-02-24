@@ -1,11 +1,11 @@
 
-const baseCharset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+const baseCharset = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 const baseCharsetLength = baseCharset.length
 
 const codeLength = 6
 
-const nullCharacter = 'A'
+const nullCharacter = '0'
 
 const inputNumberLimit = baseCharsetLength ** codeLength
 
