@@ -1,23 +1,32 @@
 
 // @ts-check
 
-/** @typedef {
+/**
+@typedef Scripts
+@type {
 	Record<string, string>
-} Scripts */
+}
+*/
 
-/** @type {
+const {assign} = Object
+
+/**
+@type {
 	Scripts
-} */
+}
+*/
 const packageScripts = exports.scripts = {}
 
-/** @type {
-	(minorScripts: Scripts) => void
-} */
+/**
+@type {
+	(currentScripts: Scripts) => void
+}
+*/
 const assignScripts = (
 	currentScripts,
 ) => {
 
-	void Object.assign(
+	void assign(
 		packageScripts,
 		currentScripts,
 	)
