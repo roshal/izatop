@@ -9,6 +9,10 @@ const nullCharacter = '0'
 
 const inputNumberLimit = baseCharsetLength ** codeLength
 
+const inputStringPattern = ''.concat('^[', baseCharset, ']+$')
+
+const inputStringRegExp = new RegExp(inputStringPattern)
+
 function validateNumber (
 	inputNumber: number,
 ) {
@@ -26,12 +30,6 @@ function validateNumber (
 	}
 
 }
-
-const inputStringPattern = [
-	'^[', baseCharset, ']+$',
-].join('')
-
-const inputStringRegExp = new RegExp(inputStringPattern)
 
 function validateString (
 	inputString: string,
